@@ -1,7 +1,51 @@
 package constructor;//[ 김찬영  2023-07-21 오후 04:18:15 ]
 //숙제
-public class Exam {
 
+public class Exam{
+	static {
+		System.out.println("스테틱영역");
+	}
+	
+	private String name;
+	private String dap;
+	private int score;	
+	private char[] ox;
+	
+	public char[] getOx() {
+		return ox;
+	}
+	public void setOx(char[] ox) {
+		this.ox = ox;
+	}
+	private final String JUNG = "11111";
+
+	public void nameSet(String name) {
+		this.name = name;
+	}
+	public void setDap(String dap) {
+		this.dap = dap;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public String getDap() {
+		return dap;
+	}
+
+	public int score() {
+		return score;
+	}
+	public void compare() {
+		
+	}
+	public Exam() {
+		
+	}
 }
 /*
 [문제] 사지선다형

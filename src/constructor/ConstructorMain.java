@@ -9,7 +9,7 @@ public class ConstructorMain {
 	}
 
 	public ConstructorMain(String name) {
-		this();// 기본생성자 호출
+		this();// 기본생성자 호출 
 		this.name = name;
 	}
 	public ConstructorMain(int age) {
